@@ -212,3 +212,7 @@ button:hover{
   box-shadow: -1px 1px 22px 1px rgba(156,156,156,1);
   cursor: pointer;
 }
+
+.social{
+  background-color: rgba(100,100,100,0.5);
+}
