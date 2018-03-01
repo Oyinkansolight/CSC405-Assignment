@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+
+	<link rel="stylesheet"  href="calculator.css">
+	<link rel="stylesheet" href="bootstrap.css">
+	<script type="text/javascript" src="calculator.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>
+</head>
+<body>
+
+	<h1>Scientific Calculator</h1>
+
+<div class="container, centre, box">
+	<div>
+
+		<div class="row, col-lg, screen">
+			<input type="text" id="screen" value="">
+		</div>
+
+		<div class="row, col-sm, buttons">
+			<input type="button" id="sin" value="Sin" onclick="sin()">
+			<input type="button" id="cos" value="Cos" onclick="cos()">
+			<input type="button" id="tan" value="Tan" onclick="tan()">
+			<input type="button" id="log" value="Log" onclick="ln()">
+			<input type="button" id="mod" value="Mod" onclick="mod()">
+
+			<input type="button" id="nine" value="9" class="num1" onclick="addChar(9)">
+			<input type="button" id="seven" value="8" onclick="addChar(8)">
+			<input type="button" id="six" value="7" onclick="addChar(7)">
+		</div>
+	</div>
+
+
+	<div>
+		<div class="row, col-sm, buttons">
+			<!-- <input type="button" id="sin-1" value="Sin-1">
+			<input type="button" id="cos-1" value="Cos-1">
+			<input type="button" id="tan-1" value="Tan-1"> -->
+			<input type="button" id="clear" value="CE" onclick="deleteChar()">
+			<input type="button" id="clearAll" value="C" onclick="clearInput()">
+
+			<input type="button" id="six" value="6" class="num2" onclick="addChar(6)">
+			<input type="button" id="five" value="5" onclick="addChar(5)">
+			<input type="button" id="four" value="4" onclick="addChar(4)">
+		</div>
+	</div>
+
+
+	<div>
+		<div class="row, col-sm, buttons">			
+			<input type="button" id="delete" value="Del" onclick="deleteChar()">
+			<input type="button" id="squareRoot" value="Sqrt" onclick="sqrt()">
+			<input type="button" id="negate" value="+-" onclick="negate() ">
+			<input type="button" id="square" value="x^2" onclick="square()">
+			<input type="button" id="exponent" value="x^y" onclick="exp()">
+			<input type="button" id="percent" value="%" onclick="percent()">
+
+			<input type="button" id="three" value="3" class="num3" onclick="addChar(3)">
+			<input type="button" id="two" value="2" onclick="addChar(2)">
+			<input type="button" id="one" value="1" onclick="addChar(1)">
+		</div>
+	</div>
+
+	<div>
+		<div class="row, col-sm, buttons">
+			<input type="button" id="multiply" value="x" onclick="addChar('*')">
+			<input type="button" id="minus" value="-" onclick="addChar('-')">
+			<input type="button" id="factorial" value="!" onclick="addChar('!')">
+			<input type="button" id="rightBracket" value="(" onclick="addChar('(')">
+			<input type="button" id="leftBracket" value=")" onclick="addChar(')')">
+			<input type="button" id="point" value="." onclick="addChar('.')">
+			<input type="button" id="plus" value="+" onclick="addChar('+')">
+			<input type="button" id="equals" value="=" onclick="compute()">
+
+			<input type="button" name="zero" value="0" class="num4" onclick="addChar(0)">
+		</div>
+	</div>
+
+
+</div>
+
+</body>
+</html>
+
+
+
+
+	
+			

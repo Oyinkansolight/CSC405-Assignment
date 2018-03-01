@@ -1,0 +1,23 @@
+body{
+	background: url(https://img00.deviantart.net/cb2e/i/2011/323/0/3/background_05_1600x1200_by_frostbo-d42mpk5.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	font-family: 'Saira Condensed', sans-serif;
+}
+
+.display{
+	visibility: hidden;
+}
+
+h1{
+	font-family: 'Roboto', sans-serif;
+	margin-top: 80px;
+}
+
+
+p{
+	margin-top: 50px;
+}
+/*font-family: 'Saira Condensed', sans-serif;
+font-family: 'Roboto', sans-serif;*/

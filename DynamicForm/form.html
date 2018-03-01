@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic Form</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<script src="form.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:700|Saira+Condensed" rel="stylesheet">
+</head>
+<body>
+
+	<h1>Take some time out to fill out this form</h1>
+
+<form>
+	
+	<p onchange="formValidation('display')">
+		<label for="interest">Are you interested in space and interplanetary projects?</label>
+		<input type="text" id="start" required>
+		<datalist>
+				<option value="No I am definately not"></option>
+				<option value="Always have been curious but never found out"></option>
+				<option value="Yes, but I do not know too much about it"></option>
+				<option value="Yes I'm all about them blackholes"></option>
+		</datalist>
+	</p>
+
+	
+	<p id="age" class="display"  onchange="formValidation('display')">
+		<label for="age">How old are you?</label>
+		<input type="text" id="age" required>
+	</p>
+
+	
+	
+	<p class="display">
+		<label for="email">E-Mail</label>
+		<input type="email" id="email" placeholder="E-Mail" required>
+	</p>
+
+	
+	
+	<p class="display">
+		<label for="sex">Male</label>
+		<input name="sex" type="radio" id="sex" value="male">
+
+		<label for="sex">Female</label>
+		<input name="sex" type="radio" id="sex" value="female">
+	</p>
+
+	
+	<p id="error" class="display">
+		You cannot proceed! Thank you.
+	</p>
+
+
+	<p class="display">
+		Do you want daily updates on activities from outer space?
+	</p>
+
+	<p class="display">
+		Would you want weekly updates then?
+	</p>
+
+
+
+	<!-- <label for=""></label>
+	<p class="display">
+		<input type="" name="">
+	</p> -->
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="reset" name="reset" class="display">
+	<input type="submit" name="submit" class="display">
+</form>
+
+</body>
+</html>
