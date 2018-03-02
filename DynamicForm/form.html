@@ -12,38 +12,48 @@
 
 <form>
 	
-	<p onchange="formValidation('display')">
+	<p >
 		<label for="interest">Are you interested in space and interplanetary projects?</label>
-		<input type="text" id="start" required>
-		<datalist>
-				<option value="No I am definately not"></option>
-				<option value="Always have been curious but never found out"></option>
-				<option value="Yes, but I do not know too much about it"></option>
-				<option value="Yes I'm all about them blackholes"></option>
-		</datalist>
+		<select  id="start" onchange="formValidation(this.selectedIndex)">
+		
+				<option></option>
+				<option value="No I am definitely not">No I am definitely not</option>
+				<option value="Always have been curious but never found out">Always have been curious but never found out</option>
+				<option value="Yes, but I do not know too much about it">Yes, but I do not know too much about it</option>
+				<option value="Yes I'm all about them blackholes">Yes I'm all about them blackholes</option>
+		</select>
 	</p>
 
 	
-	<p id="age" class="display"  onchange="formValidation('display')">
+	<p id="Age" class="display" >
 		<label for="age">How old are you?</label>
-		<input type="text" id="age" required>
+		<input type="text" id="age" required onchange="ageBracket(this.value)">
 	</p>
 
+
+<!-- 	<p id="ask" class="display">
+		Would you like to know more about space?
+	</p> -->
 	
 	
-	<p class="display">
+	<p class="display" id="email" >
 		<label for="email">E-Mail</label>
-		<input type="email" id="email" placeholder="E-Mail" required>
+		<input type="email" placeholder="E-Mail" required onchange="afterEmail(this.email)">
 	</p>
 
 	
 	
-	<p class="display">
+	<p class="display" id="sex">
+		Geder  :
 		<label for="sex">Male</label>
-		<input name="sex" type="radio" id="sex" value="male">
+		<input name="sex" type="radio" value="male" onchange="afterGender(this.value)">
 
 		<label for="sex">Female</label>
-		<input name="sex" type="radio" id="sex" value="female">
+		<input name="sex" type="radio" value="female" onchange="afterGender(this.value)">
+	</p>
+
+	<p id="underage" class="display">
+		We have a presentation just for you to get you started on interplanetary life <a href="starsandskys.org/presentation">check it out</a>
 	</p>
 
 	
@@ -52,14 +62,34 @@
 	</p>
 
 
-	<p class="display">
-		Do you want daily updates on activities from outer space?
+	<p class="display" id="update">
+		Do you want daily updates on activities from outer space? :
+		<label for="quest">Yes</label>
+		<input type="radio" name="quest" onchange="afterQuest(this.value)">
+
+		<label for="quest">No</label>
+		<input type="radio" name="quest" onchange="afterQuest(this.value)">
 	</p>
 
-	<p class="display">
-		Would you want weekly updates then?
+
+</p>
+
+
+
+	<p class="display" id="update2">
+		Would you want weekly updates then?  :
+		<label>Yes</label>
+		<input type="radio" name="quest2" onchange="afterQuest2(this.value)">
+
+		<label>No</label>
+		<input type="radio" name="quest2" onchange="afterQuest2(this.value)">
 	</p>
 
+
+
+	<p>
+		<input type="reset" name="reset" class="display" id="reset">
+	</p>
 
 
 	<!-- <label for=""></label>
@@ -71,33 +101,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<input type="reset" name="reset" class="display">
-	<input type="submit" name="submit" class="display">
 </form>
 
 </body>

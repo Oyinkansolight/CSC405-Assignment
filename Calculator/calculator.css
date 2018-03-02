@@ -14,20 +14,24 @@ h1{
 		font-size: 10px;
 	}
 
-.num1{
-	margin-left: 20px;
+div{
+	background-color: rgba(90,20,90,.8);
 }
 
-.num2{
+.num1{
 	margin-left: 15px;
 }
 
+.num2{
+	margin-left: 38px;
+}
+
 .num3{
-	margin-left: 10px;
+	margin-left: 50px;
 }
 
 .num4{
-	margin-left: 65px;
+	margin-left: 80px;
 }
 
 /*.prop{
